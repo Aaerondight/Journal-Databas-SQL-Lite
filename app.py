@@ -20,7 +20,7 @@ def prompt_view_entries(entries):
     entries = get_entries()
 
     for entry in entries:
-        print(f"\n{entry['date']}\n{entry['content']}\n")
+        print(f"{entry['date']}\n{entry['content']}\n")
 
 while (user_input := input(menu)) != "3":
 
