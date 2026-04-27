@@ -16,3 +16,11 @@ def get_entries():
     cursor = connection.execute("SELECT * FROM entries;")
     return cursor
 
+# HOW TO MAKE QUERIES DYNAMIC
+# GET_USER = "SELECT + FROM users WHERE first_name = ? AND last_name = ?;"
+# cursor = connection.execute(GET_USER, (username, password,))
+
+#JOINS
+#SELECT * FROM users JOIN orders ON users.userid = orders.orderid
+#SELECT users.*, orders.price FROM users JOIN orders ON users.userid = orders.orderid
+
